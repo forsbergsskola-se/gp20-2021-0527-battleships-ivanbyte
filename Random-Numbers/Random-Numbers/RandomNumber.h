@@ -3,5 +3,3 @@ class RandomNumber
 {
 
 };
-
-int* GetRandomNumbers();

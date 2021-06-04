@@ -1,35 +1,24 @@
-#include "RandomNumber.h"
 #include <iostream>
 #include <ctime>
 
 using namespace std;
 
-int* GetRandomNumbers()
-{
-    int numbers[1000];
-
-    srand((unsigned)time(NULL)); //Set Seed
-
-    for (int i = 0; i < 1000; i++)
-    {
-        int number = (rand() % 20) + 1;
-        numbers[i] = number;
-    }
-
-    return numbers;
-}
-
-int* CountNumberCount(int* numberArray)
-{
-
-}
-
 int main()
 {
-    int* numbers = CountNumberCount(GetRandomNumbers());
+	srand(time(NULL)); // Set Seed
 
-    for (int i = 0; i < 20; i++)
-    {
-        cout << numbers << endl;
-    }
+	int numbers[20]{};
+
+	for (int i = 0; i < 10000; i++)
+	{
+		numbers[(rand() % 20)]++;
+	}
+
+	for (int i = 0; i < 20; i++)
+	{
+		float percent =  numbers[i] * 100 / 10000;
+		cout << "Number " << i + 1 << ": " << numbers[i] << "(" << percent << "%" << ")" << endl;
+	}
+
+	return 0;
 }
