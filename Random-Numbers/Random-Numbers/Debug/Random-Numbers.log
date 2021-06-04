@@ -1,0 +1,4 @@
+﻿  RandomNumber.cpp
+D:\School\gp20-2021-0527-battleships-ivanbyte\Random-Numbers\Random-Numbers\RandomNumber.cpp(19): warning C4172: returning address of local variable or temporary: numbers
+D:\School\gp20-2021-0527-battleships-ivanbyte\Random-Numbers\Random-Numbers\RandomNumber.cpp(31): warning C4172: returning address of local variable or temporary: numbers
+  Random-Numbers.vcxproj -> D:\School\gp20-2021-0527-battleships-ivanbyte\Random-Numbers\Debug\Random-Numbers.exe
